@@ -1,0 +1,252 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+@font-face{
+	font-family: 'Pragmatica';
+	src: url("../fonts/pragmatica-medium.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: 'Pragmatica', sans-serif;
+  min-width: 1280px;
+}
+
+.main-header {
+  min-width: 1230px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.top-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width:  1230px;
+}
+
+.top-header__main-logo {
+  margin-top: 40px;
+  margin-right: 110px;
+  margin-left: 105px;
+}
+
+.top-header__second-logo {
+  font-family: 'Pragmatica', sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #231f20;
+  border: 2px solid #e3e3e4;
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 38px;
+  border-radius: 50%;
+}
+
+.top-header__second-logo:hover {
+  background-color: #e3e3e4;
+}
+
+.top-header__main-nav {
+  margin-right: 7px;
+}
+
+.top-header__site-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.top-header__list-item {
+  padding: 0;
+  margin: 0;
+}
+
+.item-floor {
+  margin-right: 10px;
+}
+
+.top-header__item-link {
+  position: relative;
+  font-family: 'Pragmatica', sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 24.64px;
+  color: #221f1f;
+  padding: 20px 40px 20px 40px;
+}
+
+.top-header__item-link::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: aqua
+}
+
+.link-buss::before {
+  background: url("../img/buss.png") no-repeat center;
+}
+
+.link-mess::before {
+  background: url("../img/cutlery.png") no-repeat center;
+}
+
+.link-floor::before {
+  background: url("../img/floors.png") no-repeat center;
+}
+
+.link-areas::before {
+  background: url("../img/areas.png") no-repeat center;
+}
+
+.top-header__user-block {
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+
+.top-header__user-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none; 
+}
+
+.top-header__user-item {
+  margin: 0;
+  padding: 0;
+}
+
+.top-header__user-item input {
+  border: none;
+  width: 95px;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 100;
+  
+}
+
+.item-search {
+  position: relative;
+}
+
+.item-search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -36px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/searches-icon.png") no-repeat center;
+} 
+
+.top-header__user-mail {
+  position: relative;
+  font-size: 0;
+  background: url("../img/mails.png") no-repeat center;
+  width: 24px;
+  height: 17px;
+  padding: 15px 14px;
+  padding-top: 25px;
+  margin-right: 45px;
+}
+
+.top-header__user-mail::before {
+  content: "12";
+  position: absolute;
+  top: 3px;
+  left: 20px;;
+  width: 13px;
+  height: 13px;
+  background-color: red;
+  color: white;
+  font-size: 8px;
+  line-height: 9.6px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.top-header__user-ahtor {
+  position: relative;
+  
+  padding: 10px 10px 10px 45px;
+  background-color: #fdda9d;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.top-header__user-ahtor::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 1px;;
+  width: 35px;
+  height: 35px;
+  background: url("../img/ahtor-item.png") no-repeat center;
+}
+
+.bottom-header__list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  margin-left: 84px;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.bottom-header__item {
+  padding: 0;
+  margin: 0;
+}
+
+.our-company {
+  margin-right: 8px;
+}
+
+.our-tiam {
+  margin-right: 10px;
+}
+
+.our-safety {
+  margin-right: -10px;
+}
+
+.management-company {
+  margin-right: 26px;
+}
+
+.our-enterprises {
+  margin-right: 14px;
+}
+
+.reference-books {
+  margin-right: 8px;
+}
+
+.bottom-header__link {
+  font-family: 'Pragmatica', sans-serif;
+  font-size: 12px;
+  line-height: 14.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1f1f1f;
+  padding: 20px 25px;
+  word-spacing: 4px;
+  letter-spacing: 0.1px;
+}
+
+.our-safety a {
+  letter-spacing: 1px;
+  word-spacing: 9px;
+}
